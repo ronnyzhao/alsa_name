@@ -108,7 +108,7 @@ int UdevGetCardNumberForPort(char *k, char *n)
 //in the device name, (i.e. pcmC0D1).
 int GetDValue(const char *k) 
 {
-	const char *p = strrchr((const char *)k, 'D');
+	const char *p = strrchr(k, 'D');
 	if (!p) {
 		return -1;
 	}
